@@ -18,6 +18,9 @@ source:
 
 build:
   number: 0
+  # clustal/../squid/squid.h:32:10: error: '../config.h' file not found, did you mean 'config.h'?
+  #include "../config.h"
+  skip: True  # [osx and x86_64]
   rpaths:
     - lib/R/lib/
     - lib/
