@@ -14,7 +14,7 @@ source:
     - https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz
   sha256: 922db8b2355196d561a7ceb5e09737460ea9d63ba311d60549253d577874e0e0
   patches:
-    - 0001-int-scale-factor.patch  # [osx and x86_64]
+    - clustalw-os-fallback.patch  # [osx and x86_64]
 
 build:
   number: 0
