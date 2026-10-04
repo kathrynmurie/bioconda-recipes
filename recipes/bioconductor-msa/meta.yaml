@@ -1,6 +1,6 @@
-{% set version = "1.45.6" %}
+{% set version = "1.44.1" %}
 {% set name = "msa" %}
-{% set bioc = "3.24" %}
+{% set bioc = "3.23" %}
 
 package:
   name: bioconductor-{{ name|lower }}
@@ -12,7 +12,7 @@ source:
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
     - https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz
     - https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz
-  sha256: 02edfb7bc6d337e37e371b2709f0300501a4202ae6ac1a6419e05dac439648a3
+  sha256: 922db8b2355196d561a7ceb5e09737460ea9d63ba311d60549253d577874e0e0
   patches:
     - 0001-int-scale-factor.patch  # [osx and x86_64]
 
